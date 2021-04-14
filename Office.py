@@ -12,7 +12,7 @@ class Office:
         print(employee)
 
     def hire(self):
-        print("hired")
+        print("employee hired")
 
     def fire(self):
-        print("fired")
+        print("employee fired")

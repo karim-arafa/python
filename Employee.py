@@ -33,7 +33,7 @@ class Employee(Person):
         if is_manager == 0 or is_manager == 1:
             self.Is_manager = is_manager
         else:
-            raise Exception("Sorry, is_manager must be 0 or 1")
+            raise Exception("Sorry, value must be 0 or 1")
 
         db().insert_emp((Full_name,email, salary, is_manager))
         
@@ -54,12 +54,12 @@ class Employee(Person):
         elif meals == 1:
             print("health rate = 50")
         else:
-            print("not human")
+            print("not valid")
 
     def buy(self, items):
         for x in range(items):
             if self.Salary < 10:
-                raise Exception("Sorry, is_manager must be 0 or 1")
+                raise Exception("Sorry, value must be 0 or 1")
             self.Salary -= 10
 
     def sendEmail(self, to, bodyreciever_name):
